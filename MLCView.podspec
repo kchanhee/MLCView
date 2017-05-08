@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MLCView'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of MLCView.'
+  s.summary          = 'Generates a lifecounter view with scoring paddles for Magic the Gathering.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,25 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+This pod generates a lifecounter view with scoring paddles to be used in the popular game Magic the Gathering. This is practice project and not meant to be used for production.
+DESC
 
-  s.homepage         = 'https://github.com/BallerChan/MLCView'
+  s.homepage         = 'https://github.com/kchanhee/MLCView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'BallerChan' => 'koh.chanhee@gmail.com' }
-  s.source           = { :git => 'https://github.com/BallerChan/MLCView.git', :tag => s.version.to_s }
+  s.author           = { 'kchanhee' => 'koh.chanhee@gmail.com' }
+  s.source           = { :git => 'https://github.com/kchanhee/MLCView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'MLCView/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MLCView' => ['MLCView/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'MLCView' => ['MLCView/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
