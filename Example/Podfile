@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MLCView_Example' do
+  pod 'MLCView', :path => '../'
+
+  target 'MLCView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
